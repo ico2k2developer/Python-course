@@ -1,3 +1,15 @@
+"""
+Scrivete programmi che leggano una riga di dati in ingresso sotto forma di stringa e 
+visualizzino quanto segue: 
+a. le sole lettere maiuscole della stringa; 
+b. a partire dalla seconda lettera della stringa, una lettera viene visualizzata e 
+l’altra no, alternativamente; 
+c. la stringa con tutte le vocali sostituita da un carattere di sottolineatura 
+(underscore); 
+d. il numero di cifre presenti nella stringa; 
+e. le posizioni di tutte le vocali presenti nella stringa.
+"""
+
 REPLACE = "_"
 
 data = input("Inserire una stringa: ")
