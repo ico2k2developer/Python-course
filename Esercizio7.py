@@ -1,3 +1,15 @@
+"""
+Scrivete programmi che leggano una sequenza di numeri interi (la sequenza termina 
+quando viene inserita la stringa vuota) che visualizzino quanto segue: 
+a. il valore minimo e il valore massimo tra quelli acquisiti 
+b. il numero di valori pari e il numero di valori dispari tra quelli acquisiti; 
+c. le somme parziali di tutti i numeri acquisiti, calcolate e visualizzate dopo ogni 
+nuova acquisizione (se, ad esempio, i valori in ingresso sono 1 7 2 9, il 
+programma visualizzerà 1 8 10 19); 
+d. i valori adiacenti duplicati (se, ad esempio, i valori acquisiti sono 1 3 3 4 5 5 6 
+6 6 3, il programma visualizzerà 3 5 6).
+"""
+
 n = input("Inserisci un numero intero: ")
 maxValue = ""
 minValue = ""
