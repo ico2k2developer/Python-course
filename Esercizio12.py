@@ -18,27 +18,22 @@ dei dati.
 
 
 def main():
-    stop = False
-    while not stop:
+    while True:
         i = input("Inserisci il reddito annuo: ")
         r = value(i)
-        while r < 0 and not stop:
+        while r < 0:
             if i == "-1":
-                stop = True
-            else:
-                i = input("Inserisci il reddito annuo correttamente: ")
-                r = value(i)
-        if not stop:
-            i = input("Inserisci il numero di figli: ")
+                return
+            i = input("Inserisci il reddito annuo correttamente: ")
+            r = value(i)
+        i = input("Inserisci il numero di figli: ")
+        s = value(i)
+        while s < 0:
+            if i == "-1":
+                return
+            i = input("Inserisci il numero di figli correttamente: ")
             s = value(i)
-            while s < 0 and not stop:
-                if i == "-1":
-                    stop = True
-                else:
-                    i = input("Inserisci il numero di figli correttamente: ")
-                    s = value(i)
-            if not stop:
-                print(f"Il sussidio economico assegnato è {subside(r,s)}")
+        print(f"Il sussidio economico assegnato è {subside(r, s)}")
 
 
 def value(text):
